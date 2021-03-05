@@ -8,5 +8,5 @@
         conn_name: ifcfg-enp0s3
         ifname: enp0s3
         type: ethernet
-        ip4: 172.17.0.10/16
+        ip4: 172.17.0.11/16
         state: present
