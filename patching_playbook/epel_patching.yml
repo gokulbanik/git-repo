@@ -1,6 +1,6 @@
 ---
   - name: 'install repo updates'
-    hosts: target
+    hosts: awx
     become: yes
     tasks:
     - name: epel updates
