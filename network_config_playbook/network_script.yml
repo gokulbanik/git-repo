@@ -1,0 +1,12 @@
+---
+- name: Add an Ethernet connection with static IP configuration
+  hosts: target 
+  become: true
+  tasks:
+    - name: Add IP address
+      nmcli:
+        conn_name: ifcfg-enp0s3
+        ifname: enp0s3
+        type: ethernet
+        ip4: 172.17.0.10/16
+        state: present

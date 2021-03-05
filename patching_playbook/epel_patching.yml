@@ -1,0 +1,9 @@
+---
+  - name: 'install repo updates'
+    hosts: target
+    become: yes
+    tasks:
+    - name: epel updates
+      yum:
+        name: epel-release
+        state: present

@@ -1,0 +1,6 @@
+- name: Deploy a web application
+  hosts: ubuntu
+  tasks:
+    - include: tasks/dependencies.yml
+    - include: tasks/db_creation.yml
+    - include: tasks/webapp.yml

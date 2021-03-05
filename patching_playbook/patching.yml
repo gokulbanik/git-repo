@@ -1,0 +1,15 @@
+---
+- hosts: target
+  become: true
+  tasks:
+  - name: 'install kernel updates'
+    yum:
+      name: 'kernel'
+
+
+ - name: 'install other updates'
+    yum:
+#     disablerepo: '*'
+      enablerepo: 'epel'
+      name: '*'
+      state: 'latest'

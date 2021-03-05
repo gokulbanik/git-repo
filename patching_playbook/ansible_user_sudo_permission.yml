@@ -1,0 +1,9 @@
+---
+# same config file
+- hosts: rhel
+  remote_user: ansible
+  tasks:
+          # create a new file on each host
+          - copy:
+              content: "ansible ALL=(ALL)   NOPASSWD:ALL"
+              dest: "/etc/sudoers.d/ansible"

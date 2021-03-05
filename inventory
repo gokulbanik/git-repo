@@ -1,0 +1,7 @@
+[rhel]
+rhel-master         ansible_host=192.168.178.150
+rhel-worker         ansible_host=192.168.178.49
+
+
+
+awx                 ansible_host=192.168.178.33

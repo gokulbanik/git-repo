@@ -1,0 +1,13 @@
+        - name: "Patch Servers"
+          hosts: rhel
+          remote_user: ansible
+          roles:
+            - os_patching
+          vars:
+            patch_display_patch_output: False
+            patch_pkgs:
+              - "yum"
+              - "httpd"
+      #        - "ansible"
+            patch_never_reboot: True
+            patch_never_restart_svc: True

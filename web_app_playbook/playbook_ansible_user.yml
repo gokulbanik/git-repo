@@ -1,0 +1,4 @@
+- name: Create Ansible user
+  hosts: rhel
+  roles:
+    - newuser

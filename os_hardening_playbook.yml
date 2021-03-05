@@ -1,0 +1,4 @@
+- name: os hardening
+  hosts: rhel
+  roles:
+   - os-hardening
